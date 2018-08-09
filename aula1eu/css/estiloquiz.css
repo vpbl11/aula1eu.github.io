@@ -1,0 +1,130 @@
+body{
+	background:url(../img/background.jpg);
+	background-repeat: repeat;
+	background-size:3840px;
+	color:#838686; 
+	font-family: "Open Sans", Helvetica, sans-serif, arial; 
+	font-size: 18px; /* 18px a· 16px = 1.125em */
+	font-weight: 300;
+	line-height: 1.2222222222em; /* 22px a· 18px = 1.22222222222em*/
+	text-align: left; 
+	text-shadow:1px 1px 0px #fff; 
+}
+.center{
+	margin: 0 auto;
+	max-width:1200px; /*largura maxima do layout*/
+	width: 90%; /*ajuste do layout a  tela*/
+}
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*fim do clearfix*/
+img, picture, video, embed {
+    max-width: 100%; /*define a largura maxima em ate 100%*/
+}
+h1, h2{
+	color:#0ac3fe; 
+	font-size: 3.3333333333em; /* 60px a· 18px = 3.3333333333em */
+	font-weight: 800;
+	letter-spacing: -0.05em; /* -3px a· 60px = -0.05em */
+	line-height: 1em; /* 60px a 60px = 1em */
+}
+h3{
+	font-size: 1.7777777778em; /* 32px a 18px = 1.7777777778em */
+	font-weight: 300;
+	letter-spacing: -0.0625em; /* -2px a 32px = -0.0625em */
+	line-height: 1.1875em; /* 38px a 32px = 1.1875em */
+}
+p{
+	font-weight: 300;
+	letter-spacing: -0.05555555556em; /* -1px a 18px = -0.05555555556em */
+}
+a, a:link, a:visited{
+	color:#1399da; 
+	font-weight:400; 
+	text-decoration:none;
+}
+a:hover{
+	color:#FE5E41;
+	text-decoration:underline;
+	text-shadow:none; 
+}
+/*----------------------------------------------------------
+Parte HEADER - Topo =======================
+----------------------------------------------------------*/
+header{
+	
+	height:150px;
+	width:100%; /*1200px a 1200px = 1 x 100 = 100%*/
+}
+/*
+=========================
+logotipo
+=========================
+*/
+	header h1 a{
+		background:url(../img/logo-criar-site-responsivo.png) no-repeat ; 
+		display:block; 
+		float:left; 
+		height:139px;
+		text-indent:-9999; 
+		width:58.333333333333%; /* 700px a 1200px = 0.58333333333333 x 100 = 58.333333333333%*/
+	}
+/*
+=========================
+nav - menu de navegaÃ§Ã£o
+=========================
+*/
+nav{
+	float:right;
+	margin-top:78px; 
+	text-align:right; 
+	width:41.6666666666667%; /* 500px a 1200px = 0.416666666666667 x 100 = 41.6666666666667%*/
+}
+	nav ul{
+		list-style-type:none; 
+	}
+		nav li {
+			display: inline; 
+		}
+			nav ul li a{
+				margin-right: 2.5%; /* 30px a 1200px = 0.025 x 100 = 2.5%*/
+			}
+			nav a:link, nav a:visited{
+				color:#999;
+				font-size: 1.1m; /* 22px a 18px = 1.2222222222em */
+				font-weight: 300;
+				letter-spacing: -0.0909090909em; /* -2px a 22px = -0.0909090909em */
+				line-height: 1.18181818182em; /* 26px a 22px = 1.18181818182em */
+				display:inline-block;
+			}
+			nav a.ativo:link, nav a:hover{
+				color:#0ac3fe; 
+			}
+/*----------------------------------------------------------
+ .CHAMADA ====================================
+----------------------------------------------------------*/
+.chamada{
+	height:290px;
+	text-align:center;
+	width:100%; /*1200px a 1200px = 1 x 100 = 100%*/
+}
+	h2 span{
+		font-size: 1em; /* 60px a 60px = 1em */
+		font-weight: 300;
+		letter-spacing: -0.0333333333em; /* -2px a 60px = 0.0333333333em */
+		line-height: 1em; /* 60px a 60px = 1em */
+	}
+	.chamada h3 {
+		margin: 0 auto;
+		width:75%;
